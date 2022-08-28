@@ -1,14 +1,14 @@
 #from sys imort argv
-from payload.py import *
+from payloads import *
 
 # class members in python are public
 # all member functions are virtual.
 
 # Objects can be bound to the same Object aka aliasing
-class open_functions(self):
-    def __init__(self):
-        pass
+class open_functions():
+    def __init__():
 
+        
 # references to names in python are attribute referrences
 
 
@@ -24,26 +24,30 @@ class open_functions(self):
        #  self.file = open_as_file(self) 
 #   pload = open_functions()
 # Bei gelegenheit -> self als argv parameter
-    def open_as_lines():
-        testlines = []
-        open("testlines.txt", "r+") as lines:
-            for i in lines.readlines():
-                testlines.append(i)
-                return testlines
+     def open_as_lines():
+         testlines = [""]
+         with opent("testlines.txt", "r") as lines:
+             for i in lines.readlines():
+                 testlines.append(i)
+         return testlines
                 #print(i)
 
-    def open_as_file():
-        with open("lines.txt", 'r+') as files:
-            pload_list = [line.rstrip('\n') for line in files]
-           # print(pload_list)
-           return pload_list
+def open_as_file():
+    pload_list = []
+    with open("lines.txt", 'r+') as files:
+        pload_list = [line.rstrip('\n') for line in files]
+        print(pload_list)
 
-list_style_open = open_as_lines()
-list_style_file= open_as_file()
 
-print(list_style_open+'\n')
-print([*] OPEN STYLE [*])
-print(list_style_file+'\n')
+#list_style_open = open_as_lines()
+#list_style_file= open_as_file()
+
+print("list_style_open+'\n'")
+print("[*] OPEN STYLE [*]")
+print("list_style_file+'\n'")
+print("[<+> FILE STYLE <+>]")
+
+
 print([<+> FILE STYLE <+>])
 
 
